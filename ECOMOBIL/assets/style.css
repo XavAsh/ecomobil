@@ -1,0 +1,190 @@
+/* Apply a basic black and white color scheme */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: darkcyan;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #008080;
+}
+
+/* Style the form container */
+form {
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    min-width: auto;
+    max-width: 30vw;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    display: flex;
+    font-size: 2em;
+    margin-top: 70px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* Style form labels and inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="password"],
+input[type="option"],
+input[type="text"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+input:invalid{
+    border-color: crimson;
+
+}
+input:valid{
+    border-color: aquamarine;
+}
+
+label {
+    display: block;
+    padding-left: 1rem;
+    &:has(+ input:user-invalid):after {
+
+    }
+    &:has(+ input:user-valid):after {
+
+    }
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+table {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 0
+}
+
+th {
+    color: black;
+    font-weight: bold;
+    border: 0;
+    padding-bottom: 10px;
+}
+.img{
+    height: 5px;
+    width: 5px;
+}
+
+/*------------------------------vehicule section ----------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.vehicle-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.vehicle-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.vehicle-selection-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 0 100px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#table2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+
